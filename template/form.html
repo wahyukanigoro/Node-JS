@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block title %}Form Page{% endblock %}
+{% block content %}
+
+<h2 >Tambah Data</h2>
+<br>
+<form method="POST">
+    <table border="0">
+        <tr>
+            <th align="left"><label>NIM</label></th>
+            <th align="left"><input type="text" name="id_mhs"></th>
+        </tr>
+        <tr>
+            <th align="left"><label>Nama</label></th>
+            <th align="left"><input type="text" name="nama"></th>
+        </tr>
+        <tr>
+            <th align="left"><label>Alamat</label></th>
+            <th align="left"><textarea name="alamat"></textarea></th>
+        </tr>
+        <tr>
+            <th align="left">&nbsp;</th>
+            <th align="left">&nbsp;</th>
+        </tr>
+        <tr>
+            <th><a href="/">Kembali</a></th>
+            <th><input type="submit" value="Simpan"></th>
+        </tr>
+    </table>
+</form>
+
+{% endblock %}
